@@ -158,21 +158,3 @@ Git stores each change as SHA values but SVN uses simple numbers as revisions.
 
 
 
-
-
-
-
-
-
-
-=========================
-1.git cherry pick
-2.git squash
-3.git bi-sect
-4.git blob
-5.git blame
-6.git fork
-7.git web-hooks
-
-
-
