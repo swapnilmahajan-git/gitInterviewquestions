@@ -85,168 +85,74 @@ Git stores each change as SHA values but SVN uses simple numbers as revisions.
    - git pull fetches any new work that has been pushed to that server since you cloned (or last cloned from) it. It’s important to note that the pull command pulls the data to your local repository.
     ---------                                                   ------                           
 
-11.) Can you explain Git architecture?
-              
-                GIT
-   -       ---------------
-	  |   flipkart    |
-	  |   --------------|--------> Source code + Meta data  
-	  |  |10K files|  | |--------> Remote Repository.
-	  |   ----|-----   |
-           -------|--------
-		  |
-	----------------------------
-       |Source   |  Stage   |  .git | ---------> local Repository.
-        ----------------------------
-
-12.)* What is the diff. bet'n Centralized and Distributed VCS.
-
    
-13.) Have you ever created Remote repositories in Git? How?
+11.) Have you ever created Remote repositories in Git? How?
    
     - We can create repository using two ways:-
       a) login to github account and click to new repository option and enter reqired name and create it.
       b) Using git init we can create local repository and push it to central repository.
 
-14. What happens if I delete .git folder?
+12. What happens if I delete .git folder?
 
-15. How do you configure username, email and editor first time 
+13. How do you configure username, email and editor first time 
     in Git?
 
-16. Where Git stores configuration details?
+14. Where Git stores configuration details?
 
-17.* What is the advantage of STAGE in Git?
+15.* What is the advantage of STAGE in Git?
 
-18. Git log options related questions
-	--author "name" :- This command show author commit history.
+16. What is SHA-1? How Git uses this?
 
-	--grep "msg/string" :- This command is useful for searching particular string/msg. (EX. git commit -m "stage")
- 
-	--oneline :- This command is useful to see only commit ids and message.
-
-	--since "Date"(2018/12/22) :- This command shows commit history from given date. 
-	
-	--until "Date"(2018/12/22) :- This command shows commit history till given date.  	 	
-
-	--follow file_name :- This command shows history of the old file.
-
-	-n2 :- It shows only last two commits.
-
-19. What is SHA-1? How Git uses this?
-
-20.)* I have a file modified in my Working directory. How do you show the content diff?
+17.)* I have a file modified in my Working directory. How do you show the content diff?
 
      - git diff command filename.
                         -------- 
 
-21.* How do you show the content diff of a file which is staged?
-
-    - git diff --staged filename.
-			--------
-
-22. How do you delete and rename a file in Git?
-
-    - git rm filename. (It is remove/delete file from GIT) 
-             --------
-    - git mv filename  new_file_name
-             --------  -------------
-
-23.** What is your branching stratogy?
-	Can you explain your release process/Stratogy?
-
-    - Refer Development to Deployment file.
- 
-
-24.** What branching model you suggest for parellel development?
-
-    - Ask to Ankit
-
-
-25. Developer fixes a bug. How do you take the change to 
-    production?
-
-   - Ask to Ankit
-
-
-25.** Explain defferent branching models that you have worked-on.
-    
-    - Working only on one branch model.
-
-
-26. Did you work on merging the code in Git?
-    
-    - no
-
-
-27.* How do you merge the code in Git?
+18).* How do you merge the code in Git?
 
     - Our developer uses the source-tree tool for merging code.
 
 
-28.* What is merge? What is conflict?
+20.* What is merge? What is conflict?
 
-29. When do we get conflict?
+21. When do we get conflict?
 
-30.* What is fast-forward merge in Git?
+22.* How do you resolve the conflit in Git?
 
-31.* What is the difference between Merge and Rebase?
+23.* What kind of conflicts you have seen?
 
-32.* How do you resolve the conflit in Git?
+24. Who resolves the conflicts?
 
-34.* What kind of conflicts you have seen?
 
-35. Who resolves the conflicts?
-
-36.** What is the difference between branch and tag?
-	When do you create a branch and tag?
-
-37. How do you create a branch and switch to that using single 
+25. How do you create a branch and switch to that using single 
 	command?
 
-38. What is HEAD pointer in Git? Where Git store HEAD info.
+26. Can we store binary files in Git?
 
-39. Can we store binary files in Git?
+27. Can skip the staging? How? what are the caveats?
 
-40. Can skip the staging? How? what are the caveats?
+28.* How do you list files/folders modified as part of a commit?
 
-41.* How do you list files/folders modified as part of a commit?
-
-42.* How do you ignore: ex:
+29.* How do you ignore: ex:
 	all files ending with .class
 	all files having alphanumeric
 	all log files but not build.log
 
-43. How do you add ignore list for all users?
+30. How do you add ignore list for all users?
 
-44.* What are the different files you ignore in your project?
+31.* What are the different files you ignore in your project?
 
-45. How to remove a committed change? Or can we remove?
+32. How to remove a committed change? Or can we remove?
 		$ git reset --hard HEAD~1
 		$ git reset --soft HEAD~1
-46. How do you lock the branch
+33. How do you lock the branch
 
-47. How do you clone the code from a particular SHA?
+34. What is Git Stash?
 
-48. How do you restore a deleted file? Or previous changes of
-	a file?
-
-49. How do you list the diff. of a file between two different 
-	branches.
-		$ git diff dev_1.2.4...master -- LoginUser.java
-
-50. How do you list the changes which are going to be fetched? 
-method:1		
-		$ git fetch		
-		$ git log origin/master ^master
-method:2
-		$ git fetch && git diff master origin/master --name-only
-
-51. What is Git Stash?
-
-52. How do you add a new remote to git? Or How do you attach
+35. How do you add a new remote to git? Or How do you attach
 	your local repo with remote?
 
-53. What is git ls-tree?
+36. What is git ls-tree?
 	git ls-tree <sha> --> Lists files committed as part of 
 	a commit.
 
